@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+  Color del Loading
+*/
+svg path,
+svg rect{
+  fill: black;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s !important;
+  animation-duration: 1s !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation-duration: unset !important;
+    animation-duration: unset !important;
+    -webkit-animation-fill-mode: none !important;
+    animation-fill-mode: none !important;
+  }
+}
+
+/* Fading entrances  */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
